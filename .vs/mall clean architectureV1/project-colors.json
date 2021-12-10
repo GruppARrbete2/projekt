@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5a6dfaf1-73bf-4b13-bd14-0778f1d33a74": {
+      "ProjectGuid": "5a6dfaf1-73bf-4b13-bd14-0778f1d33a74",
+      "DisplayName": "mall clean architectureV1",
+      "ColorIndex": 0
+    },
+    "3c2a88fd-1f03-4799-a482-9456c049dfcf": {
+      "ProjectGuid": "3c2a88fd-1f03-4799-a482-9456c049dfcf",
+      "DisplayName": "API",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

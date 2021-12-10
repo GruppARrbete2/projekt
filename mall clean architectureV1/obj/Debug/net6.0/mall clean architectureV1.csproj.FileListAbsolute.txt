@@ -1,0 +1,27 @@
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\mall clean architectureV1.csproj.AssemblyReference.cache
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\mall clean architectureV1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\mall clean architectureV1.AssemblyInfoInputs.cache
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\mall clean architectureV1.AssemblyInfo.cs
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\mall clean architectureV1.csproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\mall clean architectureV1.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\mall clean architectureV1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\bin\Debug\net6.0\appsettings.json
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\bin\Debug\net6.0\mall clean architectureV1.exe
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\bin\Debug\net6.0\mall clean architectureV1.deps.json
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\bin\Debug\net6.0\mall clean architectureV1.runtimeconfig.json
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\bin\Debug\net6.0\mall clean architectureV1.dll
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\bin\Debug\net6.0\ref\mall clean architectureV1.dll
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\bin\Debug\net6.0\mall clean architectureV1.pdb
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\scopedcss\bundle\mall clean architectureV1.styles.css
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\mall clean architectureV1.csproj.CopyComplete
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\mall clean architectureV1.dll
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\ref\mall clean architectureV1.dll
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\mall clean architectureV1.pdb
+C:\Users\sebas\source\repos\mall clean architectureV1\mall clean architectureV1\obj\Debug\net6.0\mall clean architectureV1.genruntimeconfig.cache
