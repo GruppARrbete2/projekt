@@ -14,9 +14,34 @@ namespace API.Repositories
         }
 
    
-       public async Task<List<Template>> GetAll()
+     
+
+       public async Task<DoorOpened> OpenDoor(int ID, string DörrBenämning)
         {
-            return await _templateDBContext.Templates.ToListAsync();
+            var user = await _templateDBContext.Tenants.FirstOrDefaultAsync(tenants => tenants.TenantID == ID);
+            var Door = await _templateDBContext.Doors.FirstOrDefaultAsync(door => door.DörrBenämning == DörrBenämning);
+
+            if (user != null && Door != null)
+            {
+                var userOpenDoor = new DoorOpened
+                {
+                    TenantID = user.TenantID,
+                    Time = DateTime.Now.TimeOfDay,
+                    DoorOpenedId = new Guid(),
+                    DoorID = Door.DoorID,
+                    
+            };
+                _templateDBContext.SaveChanges();
+                return userOpenDoor;
+
+
+            }
+
+
+            else
+            {
+                return null;
+            }
         }
     }
 }

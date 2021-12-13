@@ -6,6 +6,7 @@ namespace API.Repositories
 {
     public interface ITRepository
 {
-         Task<List<Template>> GetAll();
+         Task<DoorOpened> OpenDoor(int ID, string DörrBenämning);
+      
     }
 }

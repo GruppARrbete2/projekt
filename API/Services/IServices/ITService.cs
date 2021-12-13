@@ -4,6 +4,7 @@ namespace API.Services.IServices
 {
     public interface ITService
     {
-        Task<List<Template>> GetAll();
+        Task<DoorOpened> OpenDoor(int ID, string DörrBenämning);
+      
     }
 }

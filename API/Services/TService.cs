@@ -13,11 +13,14 @@ namespace API.Services
             _tRepository = tRepository;
         }
 
-        public async Task<List<Template>> GetAll()
+        public async Task<DoorOpened> OpenDoor(int ID, string DörrBenämning)
         {
-            var TGetAll = await _tRepository.GetAll();
+            var TGetAll = await _tRepository.OpenDoor(ID, DörrBenämning);
 
             return TGetAll;
         }
+
     }
+    
+
 }

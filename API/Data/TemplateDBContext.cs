@@ -13,17 +13,26 @@ namespace API.Data
         {
         }
 
-        public DbSet<Template> Templates { get; set; }
+        public DbSet<Tenant> Tenants { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<Door> Doors { get; set; }
+        public DbSet<DoorOpened> DoorsOpened { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.Entity<Template>()
+            builder.Entity<Tenant>()
                 .HasData(
-                new Template { TemplateID = 1, TemplateString = "test1" },
-                new Template { TemplateID = 2, TemplateString = "test2" }
+                new Tenant { TenantID = 1, Namne = "Göran Svensson", Apartment = 1001, Tag = "1001A" },
+                new Tenant { TenantID = 2, Namne = "Göran Andersson", Apartment = 1002, Tag = "1002A" }
 );
+            builder.Entity<Door>()
+                  .HasData(
+                  new Door { DoorID = 1, DörrBenämning="Tvätt", Explanation="Dörr mot tvättstuga"},
+                  new Door { DoorID = 2, DörrBenämning="LGH", Explanation="Dörr till lägenhet"}
+  );
 
-           
+
         }
     }
 }

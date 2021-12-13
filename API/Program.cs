@@ -1,5 +1,6 @@
 using API.Data;
 using API.Repositories;
+using API.Repositories.IRepository;
 using API.Services;
 using API.Services.IServices;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,8 @@ builder.Services.AddDbContext<TemplateDBContext>(options =>
 
 builder.Services.AddScoped<ITRepository, TRepository>();
 builder.Services.AddScoped<ITService, TService>();
+builder.Services.AddScoped<IDoorService, DoorService>();
+builder.Services.AddScoped<IDoorRepository, DoorRepository>();
 
 var app = builder.Build();
 
