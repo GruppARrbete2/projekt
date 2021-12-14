@@ -4,6 +4,7 @@ using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(TemplateDBContext))]
-    partial class TemplateDBContextModelSnapshot : ModelSnapshot
+    [Migration("20211214084157_Test165")]
+    partial class Test165
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -126,7 +128,7 @@ namespace API.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Outputs");
+                    b.ToTable("Output");
 
                     b.HasData(
                         new
@@ -137,7 +139,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = new TimeSpan(388357458664)
+                            Time = new TimeSpan(349170414754)
                         },
                         new
                         {
@@ -147,7 +149,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = new TimeSpan(388357458720)
+                            Time = new TimeSpan(349170414819)
                         });
                 });
 

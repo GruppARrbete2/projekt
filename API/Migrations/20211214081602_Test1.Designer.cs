@@ -4,6 +4,7 @@ using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(TemplateDBContext))]
-    partial class TemplateDBContextModelSnapshot : ModelSnapshot
+    [Migration("20211214081602_Test1")]
+    partial class Test1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -91,64 +93,6 @@ namespace API.Migrations
                     b.HasKey("LocationID");
 
                     b.ToTable("Locations");
-                });
-
-            modelBuilder.Entity("API.Models.Output", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
-
-                    b.Property<string>("Code")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CodeExplation")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("DörrBenämning")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Person")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Tag")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<TimeSpan?>("Time")
-                        .HasColumnType("time");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Outputs");
-
-                    b.HasData(
-                        new
-                        {
-                            ID = 1,
-                            Code = "DÖIN",
-                            CodeExplation = "Öppnade dörr till lägenhet 0301 inifrån",
-                            DörrBenämning = "TVÄTT",
-                            Person = "Ella Ahlström",
-                            Tag = "0301A",
-                            Time = new TimeSpan(388357458664)
-                        },
-                        new
-                        {
-                            ID = 2,
-                            Code = "DÖUT",
-                            CodeExplation = "Öppnade dörr till lägenhet 0301 utifrån",
-                            DörrBenämning = "TVÄTT",
-                            Person = "Ella Ahlström",
-                            Tag = "0301A",
-                            Time = new TimeSpan(388357458720)
-                        });
                 });
 
             modelBuilder.Entity("API.Models.Tenant", b =>

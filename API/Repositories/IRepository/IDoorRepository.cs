@@ -4,6 +4,6 @@ namespace API.Repositories.IRepository
 {
     public interface IDoorRepository
     {
-       Task<Door> FindEntriesByDoor(int id);
+        Task<List<Output>> FindEntriesByDoor(string name);
     }
 }

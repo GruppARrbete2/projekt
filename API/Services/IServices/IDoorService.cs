@@ -4,6 +4,6 @@ namespace API.Services.IServices
 {
     public interface IDoorService
     {
-        Task<Door> FindEntriesByDoor(int id);
+        Task<List<Output>> FindEntriesByDoor(string name);
     }
 }

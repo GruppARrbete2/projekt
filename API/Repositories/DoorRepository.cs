@@ -15,10 +15,12 @@ namespace API.Repositories
 
       
 
-        public async Task<Door> FindEntriesByDoor(int id)
+        public async  Task<List<Output>> FindEntriesByDoor(string name)
         {
-         return  await _templateDBContext.Doors.FirstOrDefaultAsync(door => door.DoorID == id);
+         var list = await  _templateDBContext.Outputs.Where(output => output.DörrBenämning == name).ToListAsync();
 
+            return list;
+            
         }
     }
 }

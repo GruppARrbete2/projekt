@@ -20,10 +20,10 @@ namespace API.Controllers
          
 
             [HttpGet("FindEntriesByDoor")]
-            public async Task<Door> FindEntriesByDoor(int ID)
+            public async Task<List<Output>> FindEntriesByDoor(string name)
             {
-                return await _doorService.FindEntriesByDoor(ID);
+                return await _doorService.FindEntriesByDoor(name);
             }
         }
     }
-}
+

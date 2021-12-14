@@ -17,9 +17,9 @@ namespace API.Services
 
 
 
-        public Task<Door> FindEntriesByDoor(int id)
+        public Task<List<Output>> FindEntriesByDoor(string name)
         {
-           return  _doorRepository.FindEntriesByDoor(id);
+           return  _doorRepository.FindEntriesByDoor(name);
         }
     }
 }

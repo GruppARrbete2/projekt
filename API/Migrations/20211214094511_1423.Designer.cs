@@ -4,6 +4,7 @@ using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(TemplateDBContext))]
-    partial class TemplateDBContextModelSnapshot : ModelSnapshot
+    [Migration("20211214094511_1423")]
+    partial class _1423
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -137,7 +139,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = new TimeSpan(388357458664)
+                            Time = new TimeSpan(387105860504)
                         },
                         new
                         {
@@ -147,7 +149,27 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = new TimeSpan(388357458720)
+                            Time = new TimeSpan(387105860579)
+                        },
+                        new
+                        {
+                            ID = 3,
+                            Code = "DÖIN",
+                            CodeExplation = "Öppnade dörr till lägenhet 0301 inifrån",
+                            DörrBenämning = "ut",
+                            Person = "Göran Andresson",
+                            Tag = "0302A",
+                            Time = new TimeSpan(387105860590)
+                        },
+                        new
+                        {
+                            ID = 4,
+                            Code = "DÖUT",
+                            CodeExplation = "Öppnade dörr till lägenhet 0301 utifrån",
+                            DörrBenämning = "ut",
+                            Person = "Ella Ahlström",
+                            Tag = "0302A",
+                            Time = new TimeSpan(387105860598)
                         });
                 });
 

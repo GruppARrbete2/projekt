@@ -17,6 +17,7 @@ namespace API.Data
         public DbSet<Location> Locations { get; set; }
         public DbSet<Door> Doors { get; set; }
         public DbSet<DoorOpened> DoorsOpened { get; set; }
+        public DbSet<Output> Outputs { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -28,10 +29,16 @@ namespace API.Data
 );
             builder.Entity<Door>()
                   .HasData(
-                  new Door { DoorID = 1, DörrBenämning="Tvätt", Explanation="Dörr mot tvättstuga"},
-                  new Door { DoorID = 2, DörrBenämning="LGH", Explanation="Dörr till lägenhet"}
+                  new Door { DoorID = 1, DörrBenämning = "Tvätt", Explanation = "Dörr mot tvättstuga" },
+                  new Door { DoorID = 2, DörrBenämning = "LGH", Explanation = "Dörr till lägenhet" }
+ 
+);
+            builder.Entity<Output>()
+                  .HasData(
+                  new Output { ID = 1, Time = DateTime.Now.TimeOfDay,DörrBenämning = "TVÄTT", Code = "DÖIN" , Tag = "0301A" , Person = "Ella Ahlström" , CodeExplation = "Öppnade dörr till lägenhet 0301 inifrån" },
+                  new Output { ID = 2, Time = DateTime.Now.TimeOfDay, DörrBenämning = "TVÄTT", Code = "DÖUT", Tag = "0301A", Person = "Ella Ahlström", CodeExplation = "Öppnade dörr till lägenhet 0301 utifrån" }
+          
   );
-
 
         }
     }
