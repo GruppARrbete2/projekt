@@ -31,6 +31,19 @@ namespace API.Controllers
             return await _doorService.FindEntriesByCode(name);
         }
 
+        [HttpGet("FindEntriesByTag")]
+        public async Task<List<Output>> FindEntriesByTag(string name)
+        {
+            return await _doorService.FindEntriesByTag(name);
+        }
+
+
+
+        [HttpPost("CreateData")]
+        public async Task<Output> CreateData(string dörrBenämning, string code, string tag, string person, string codeExplanation)
+        {
+            return await _doorService.CreateData(dörrBenämning , code , tag , person , codeExplanation);
+        }
     }
     }
 
