@@ -35,9 +35,11 @@ namespace API.Data
 );
             builder.Entity<Output>()
                   .HasData(
-                  new Output { ID = 1, Time = DateTime.Now.TimeOfDay,DörrBenämning = "TVÄTT", Code = "DÖIN" , Tag = "0301A" , Person = "Ella Ahlström" , CodeExplation = "Öppnade dörr till lägenhet 0301 inifrån" },
-                  new Output { ID = 2, Time = DateTime.Now.TimeOfDay, DörrBenämning = "TVÄTT", Code = "DÖUT", Tag = "0301A", Person = "Ella Ahlström", CodeExplation = "Öppnade dörr till lägenhet 0301 utifrån" }
-          
+                  new Output { ID = 1, Time = DateTime.Now.TimeOfDay,DörrBenämning = "TVÄTT", Code = "DÖIN" , Tag = "0301A" , Person = "Ella Ahlström" , CodeExplation = "Öppnade dörr till tvätten 0301 inifrån" },
+                  new Output { ID = 2, Time = DateTime.Now.TimeOfDay, DörrBenämning = "TVÄTT", Code = "DÖUT", Tag = "0301A", Person = "Ella Ahlström", CodeExplation = "Öppnade dörr till tvätten 0301 utifrån" },
+                   new Output { ID = 3, Time = DateTime.Now.TimeOfDay, DörrBenämning = "Lägenhet", Code = "DÖIN", Tag = "0302A", Person = "Göran Ahlström", CodeExplation = "Öppnade dörr till lägenhet 0301 utifrån" }
+
+
   );
 
         }
