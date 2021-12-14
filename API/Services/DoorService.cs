@@ -27,5 +27,10 @@ namespace API.Services
         {
             return _doorRepository.FindEntriesByCode(name);
         }
+
+        public Task<List<Output>> FindEntriesByTag(string name)
+        {
+            return _doorRepository.FindEntriesByTag(name);
+        }
     }
 }

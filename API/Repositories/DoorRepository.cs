@@ -23,6 +23,14 @@ namespace API.Repositories
             
         }
 
+        public async Task<List<Output>> FindEntriesByTag(string name)
+        {
+            var list = await _templateDBContext.Outputs.Where(output => output.Tag == name).ToListAsync();
+
+            return list;
+
+        }
+
 
         public async Task<List<Output>> FindEntriesByCode(string name)
         {
