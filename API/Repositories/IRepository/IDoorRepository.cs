@@ -7,5 +7,7 @@ namespace API.Repositories.IRepository
         Task<List<Output>> FindEntriesByDoor(string name);
 
         Task<List<Output>> FindEntriesByCode(string name);
+
+        Task<List<Output>> FindEntriesByTag(string name);
     }
 }
