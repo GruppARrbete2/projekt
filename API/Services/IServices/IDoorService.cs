@@ -10,5 +10,7 @@ namespace API.Services.IServices
         Task<List<Output>> FindEntriesByCode(string name);
 
         Task<List<Output>> FindEntriesByTag(string name);
+
+        Task<List<Output>> FindEntriesByDörrBenämning(string name);
     }
 }

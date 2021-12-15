@@ -29,5 +29,10 @@ namespace API.Services
         {
             return _doorRepository.FindEntriesByTag(name);
         }
+
+        public Task<List<Output>> FindEntriesByDörrBenämning(string name)
+        {
+            return _doorRepository.FindEntriesByDörrBenämning(name);
+        }
     }
 }
