@@ -35,7 +35,7 @@ namespace API.Controllers
             return await _doorService.FindEntriesByTag(name);
         }
 
-        [HttpGet("FindEntriesByLocation")]
+        [HttpGet("FindEntriesByDörrBenämning")]
         public async Task<List<Output>> FindEntriesByDörrBenämning(string name)
         {
             return await _doorService.FindEntriesByDörrBenämning(name);
