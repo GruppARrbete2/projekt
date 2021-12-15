@@ -12,5 +12,7 @@ namespace API.Services.IServices
         Task<List<Output>> FindEntriesByTag(string name);
 
         Task<List<Output>> FindEntriesByDörrBenämning(string name);
+
+        Task<List<Tenant>> ListTenantsAt(string name);
     }
 }

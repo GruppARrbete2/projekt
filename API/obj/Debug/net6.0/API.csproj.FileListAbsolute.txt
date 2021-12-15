@@ -229,3 +229,4 @@ C:\Users\Elev\Source\Repos\projekt\API\obj\Debug\net6.0\ref\API.dll
 C:\Users\Elev\Source\Repos\projekt\API\obj\Debug\net6.0\API.pdb
 C:\Users\Elev\Source\Repos\projekt\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\Elev\Source\Repos\projekt\API\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
+C:\Users\JonathanKareemIssela\Desktop\GrAr2\projekt\API\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
