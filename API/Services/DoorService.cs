@@ -15,13 +15,10 @@ namespace API.Services
             _doorRepository = doorRepository;
         }
 
-
-
         public Task<List<Output>> FindEntriesByDoor(string name)
         {
            return  _doorRepository.FindEntriesByDoor(name);
         }
-
 
         public Task<List<Output>> FindEntriesByCode(string name)
         {
@@ -31,6 +28,11 @@ namespace API.Services
         public Task<List<Output>> FindEntriesByTag(string name)
         {
             return _doorRepository.FindEntriesByTag(name);
+        }
+
+        public Task<List<Output>> FindEntriesByDörrBenämning(string name)
+        {
+            return _doorRepository.FindEntriesByDörrBenämning(name);
         }
     }
 }

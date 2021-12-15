@@ -9,15 +9,13 @@ namespace API.Controllers
     [EnableCors("CORSPolicy")]
     [Route("[controller]")]
     public class DoorController : ControllerBase
-    {
-      
+    {   
             private readonly IDoorService _doorService;
 
             public DoorController(IDoorService doorService)
             {
             _doorService = doorService;
-            }
-         
+            }     
 
             [HttpGet("FindEntriesByDoor")]
             public async Task<List<Output>> FindEntriesByDoor(string name)
@@ -36,6 +34,11 @@ namespace API.Controllers
         {
             return await _doorService.FindEntriesByTag(name);
         }
-    }
-    }
 
+        [HttpGet("FindEntriesByDörrBenämning")]
+        public async Task<List<Output>> FindEntriesByDörrBenämning(string name)
+        {
+            return await _doorService.FindEntriesByDörrBenämning(name);
+        }
+    }
+ }

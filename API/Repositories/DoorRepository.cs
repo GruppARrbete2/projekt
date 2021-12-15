@@ -13,31 +13,32 @@ namespace API.Repositories
             _templateDBContext = templateDBContext;
         }
 
-      
-
         public async  Task<List<Output>> FindEntriesByDoor(string name)
         {
          var list = await  _templateDBContext.Outputs.Where(output => output.DörrBenämning == name).ToListAsync();
 
-            return list;
-            
+            return list;           
         }
-
+        
         public async Task<List<Output>> FindEntriesByTag(string name)
         {
             var list = await _templateDBContext.Outputs.Where(output => output.Tag == name).ToListAsync();
 
             return list;
-
         }
-
 
         public async Task<List<Output>> FindEntriesByCode(string name)
         {
             var list = await _templateDBContext.Outputs.Where(output => output.Code == name).ToListAsync();
 
             return list;
+        }
 
+        public async Task<List<Output>> FindEntriesByDörrBenämning(string name)
+        {
+            var list = await _templateDBContext.Outputs.Where(output => output.Code == name).ToListAsync();
+
+            return list;
         }
     }
 }
