@@ -40,5 +40,11 @@ namespace API.Repositories
 
             return list;
         }
+        public async Task<List<Output>> FindEntriesByTenant(string name)
+        {
+            var list = await _templateDBContext.Outputs.Where(output => output.Code == name).ToListAsync();
+
+            return list;
+        }
     }
 }
