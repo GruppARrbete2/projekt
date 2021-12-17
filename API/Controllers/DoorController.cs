@@ -39,11 +39,15 @@ namespace API.Controllers
 
 
 
+<<<<<<< Updated upstream
         [HttpPost("CreateData")]
         public async Task<Output> CreateData(string dörrBenämning, string code, string tag, string person, string codeExplanation)
         {
             return await _doorService.CreateData(dörrBenämning , code , tag , person , codeExplanation);
         }
+=======
+       
+>>>>>>> Stashed changes
     }
     }
 

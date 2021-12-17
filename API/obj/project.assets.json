@@ -2047,19 +2047,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sebastian\\.nuget\\packages\\": {}
+    "C:\\Users\\sebas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sebastian\\OneDrive\\Skrivbord\\projektarbete\\projekt\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\sebas\\OneDrive\\Skrivbord\\proejktarbetet\\projekt\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Sebastian\\OneDrive\\Skrivbord\\projektarbete\\projekt\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sebastian\\OneDrive\\Skrivbord\\projektarbete\\projekt\\API\\obj\\",
+      "projectPath": "C:\\Users\\sebas\\OneDrive\\Skrivbord\\proejktarbetet\\projekt\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sebas\\OneDrive\\Skrivbord\\proejktarbetet\\projekt\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
