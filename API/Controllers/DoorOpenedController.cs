@@ -20,9 +20,6 @@ namespace API.Controllers
         public async Task<DoorOpened> OpenDoor(int ID, string DörrBenämning)
         {
             return await _tService.OpenDoor( ID, DörrBenämning);
-        }
-
-
-      
+        } 
     }
 }

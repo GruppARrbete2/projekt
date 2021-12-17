@@ -13,14 +13,18 @@ namespace API.Repositories
             _templateDBContext = templateDBContext;
         }
 
-      
-
         public async  Task<List<Output>> FindEntriesByDoor(string name)
         {
          var list = await  _templateDBContext.Outputs.Where(output => output.DörrBenämning == name).ToListAsync();
 
+            return list;           
+        }
+        
+        public async Task<List<Output>> FindEntriesByTag(string name)
+        {
+            var list = await _templateDBContext.Outputs.Where(output => output.Tag == name).ToListAsync();
+
             return list;
-            
         }
 
         public async Task<List<Output>> FindEntriesByTag(string name)
@@ -37,7 +41,21 @@ namespace API.Repositories
             var list = await _templateDBContext.Outputs.Where(output => output.Code == name).ToListAsync();
 
             return list;
+        }
 
+/*        public async Task<List<Tenant>> ListTenantsAt(string name)
+        {
+            var list = await _templateDBContext.Tenants.Where(t => t.Apartment.ToString("0000") == name).ToListAsync();
+
+            return list;
+        }
+*/
+        public Task<List<Tenant>> ListTentatsAt(string name)
+        {
+            int.TryParse(name, out var tentat);
+            var list = _templateDBContext.Tenants.Where(t => t.Apartment == tentat).ToListAsync();
+
+            return list;
         }
 
 

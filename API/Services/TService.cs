@@ -19,8 +19,5 @@ namespace API.Services
 
             return TGetAll;
         }
-
     }
-    
-
 }

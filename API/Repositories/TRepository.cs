@@ -13,9 +13,6 @@ namespace API.Repositories
             _templateDBContext = templateDBContext;
         }
 
-   
-     
-
        public async Task<DoorOpened> OpenDoor(int ID, string DörrBenämning)
         {
             var user = await _templateDBContext.Tenants.FirstOrDefaultAsync(tenants => tenants.TenantID == ID);
@@ -32,11 +29,9 @@ namespace API.Repositories
                     
             };
                 _templateDBContext.SaveChanges();
+
                 return userOpenDoor;
-
-
             }
-
 
             else
             {

@@ -15,13 +15,10 @@ namespace API.Services
             _doorRepository = doorRepository;
         }
 
-
-
         public Task<List<Output>> FindEntriesByDoor(string name)
         {
            return  _doorRepository.FindEntriesByDoor(name);
         }
-
 
         public Task<List<Output>> FindEntriesByCode(string name)
         {
