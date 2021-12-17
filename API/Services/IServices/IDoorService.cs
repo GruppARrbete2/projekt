@@ -13,6 +13,10 @@ namespace API.Services.IServices
 
         Task<List<Output>> FindEntriesByDörrBenämning(string name);
 
+<<<<<<< HEAD
+        Task<List<Output>> FindEntriesByTenant(string name);
+=======
         Task<List<Tenant>> ListTenantsAt(string name);
+>>>>>>> main
     }
 }

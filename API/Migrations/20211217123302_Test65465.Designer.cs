@@ -4,6 +4,7 @@ using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(TemplateDBContext))]
-    partial class TemplateDBContextModelSnapshot : ModelSnapshot
+    [Migration("20211217123302_Test65465")]
+    partial class Test65465
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -137,11 +139,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-<<<<<<< HEAD
-                            Time = new TimeSpan(493044728460)
-=======
-                            Time = new TimeSpan(492845251702)
->>>>>>> main
+                            Time = new TimeSpan(487826722939)
                         },
                         new
                         {
@@ -151,11 +149,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-<<<<<<< HEAD
-                            Time = new TimeSpan(493044728499)
-=======
-                            Time = new TimeSpan(492845251755)
->>>>>>> main
+                            Time = new TimeSpan(487826722975)
                         },
                         new
                         {
@@ -165,11 +159,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-<<<<<<< HEAD
-                            Time = new TimeSpan(493044728502)
-=======
-                            Time = new TimeSpan(492845251759)
->>>>>>> main
+                            Time = new TimeSpan(487826722978)
                         });
                 });
 

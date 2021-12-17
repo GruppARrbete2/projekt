@@ -10,8 +10,11 @@ namespace API.Repositories.IRepository
 
         Task<List<Output>> FindEntriesByTag(string name);
 
-        Task<List<Output>> FindEntriesByDörrBenämning(string name); 
 
-        Task<List<Tenant>> ListTentatsAt(string name);
+        Task<List<Output>> FindEntriesByDörrBenämning(string name);
+
+        Task<List<Output>> FindEntriesByTenant(string name);
+
+
     }
 }
