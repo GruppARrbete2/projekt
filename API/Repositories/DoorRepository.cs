@@ -36,13 +36,13 @@ namespace API.Repositories
 
         public async Task<List<Output>> FindEntriesByDörrBenämning(string name)
         {
-            var list = await _templateDBContext.Outputs.Where(output => output.Code == name).ToListAsync();
+            var list = await _templateDBContext.Outputs.Where(output => output.DörrBenämning == name).ToListAsync();
 
             return list;
         }
         public async Task<List<Output>> FindEntriesByTenant(string name)
         {
-            var list = await _templateDBContext.Outputs.Where(output => output.Code == name).ToListAsync();
+            var list = await _templateDBContext.Outputs.Where(output => output.Person == name).ToListAsync();
 
             return list;
         }
