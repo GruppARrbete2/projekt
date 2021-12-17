@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9BnonFDGtMyvtTkJ3n5TcxWTmGW1E7mkYf2ATVpSXv57iIZ2nRORyXtXp8SoCR42HhauVz9qE7lm93KTNOEOVw==",
+  "dgSpecHash": "09wBYnyTSR6Ip/sd0fMM22/BronZPq4c6AzFbWPyVdRkfizq35mGVo2rLncp84WLvkKYbg35MPJJg0U93+ouOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebas\\OneDrive\\Skrivbord\\proejktarbetet\\projekt\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\sebas\\OneDrive\\Skrivbord\\projektarbetet1712\\projekt\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sebas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -54,12 +54,5 @@
     "C:\\Users\\sebas\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\sebas\\OneDrive\\Skrivbord\\proejktarbetet\\projekt\\API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

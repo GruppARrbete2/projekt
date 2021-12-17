@@ -41,17 +41,17 @@ namespace API.Controllers
             return await _doorService.FindEntriesByDörrBenämning(name);
         }
 
-<<<<<<< HEAD
+
         [HttpGet("FindEntriesByTenant")]
         public async Task<List<Output>> FindEntriesByTenant(string name)
         {
             return await _doorService.FindEntriesByTenant(name);
-=======
+        }
         [HttpGet("ListTentatsAt")]
         public async Task<List<Tenant>> ListTentatsAt(string name)
         {
             return await _doorService.ListTenantsAt(name);
->>>>>>> main
+
         }
     }
  }

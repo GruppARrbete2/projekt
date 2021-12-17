@@ -16,5 +16,8 @@ namespace API.Repositories.IRepository
         Task<List<Output>> FindEntriesByTenant(string name);
 
 
+        Task<List<Tenant>> ListTentatsAt(string name);
+
+
     }
 }
