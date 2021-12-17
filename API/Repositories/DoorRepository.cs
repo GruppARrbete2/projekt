@@ -46,5 +46,20 @@ namespace API.Repositories
 
             return list;
         }
+
+/*        public async Task<List<Tenant>> ListTenantsAt(string name)
+        {
+            var list = await _templateDBContext.Tenants.Where(t => t.Apartment.ToString("0000") == name).ToListAsync();
+
+            return list;
+        }
+*/
+        public Task<List<Tenant>> ListTentatsAt(string name)
+        {
+            int.TryParse(name, out var tentat);
+            var list = _templateDBContext.Tenants.Where(t => t.Apartment == tentat).ToListAsync();
+
+            return list;
+        }
     }
 }
