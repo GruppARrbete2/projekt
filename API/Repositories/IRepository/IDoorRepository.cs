@@ -18,6 +18,8 @@ namespace API.Repositories.IRepository
 
         Task<List<Tenant>> ListTentatsAt(string name);
 
+        Task<Output> CreateData(string dörrBenämning, string code, string tag, string person, string codeExplanation);
+
 
     }
 }
