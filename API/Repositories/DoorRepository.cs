@@ -41,13 +41,27 @@ namespace API.Repositories
             return list;
         }
 
-/*        public async Task<List<Tenant>> ListTenantsAt(string name)
+        public async Task<Output> CreateData(string dörrBenämning, string code, string tag, string person, string codeExplanation)
         {
-            var list = await _templateDBContext.Tenants.Where(t => t.Apartment.ToString("0000") == name).ToListAsync();
+            var createData = new Output
+            {
 
-            return list;
+                Time = DateTime.Now.TimeOfDay,
+                DörrBenämning = dörrBenämning,
+                Code = code,
+                Tag = tag,
+                Person = person,
+                CodeExplation = codeExplanation
+
+            };
+
+            _templateDBContext.Outputs.Add(createData);
+            _templateDBContext.SaveChanges();
+
+
+            return createData;
+
         }
-*/
         public Task<List<Tenant>> ListTentatsAt(string name)
         {
             int.TryParse(name, out var tentat);

@@ -14,5 +14,7 @@ namespace API.Services.IServices
         Task<List<Output>> FindEntriesByDörrBenämning(string name);
 
         Task<List<Tenant>> ListTenantsAt(string name);
+
+        Task<Output> CreateData(string dörrBenämning, string code, string tag, string person, string codeExplanation);
     }
 }

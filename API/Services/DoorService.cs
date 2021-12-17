@@ -2,6 +2,7 @@
 using API.Repositories;
 using API.Repositories.IRepository;
 using API.Services.IServices;
+using System.Xml.Linq;
 
 namespace API.Services
 {
@@ -38,6 +39,11 @@ namespace API.Services
         public Task<List<Tenant>> ListTenantsAt(string name)
         {
             return _doorRepository.ListTentatsAt(name);
+        }
+
+        public Task<Output> CreateData(string dörrBenämning, string code, string tag, string person, string codeExplanation)
+{
+            return _doorRepository.CreateData(dörrBenämning, code, tag, person, codeExplanation);
         }
     }
 }

@@ -2047,19 +2047,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JonathanKareemIssela\\.nuget\\packages\\": {}
+    "C:\\Users\\sebas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JonathanKareemIssela\\Desktop\\GrAr2\\projekt\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\sebas\\OneDrive\\Skrivbord\\proejktarbetet\\projekt\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\JonathanKareemIssela\\Desktop\\GrAr2\\projekt\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\JonathanKareemIssela\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JonathanKareemIssela\\Desktop\\GrAr2\\projekt\\API\\obj\\",
+      "projectPath": "C:\\Users\\sebas\\OneDrive\\Skrivbord\\proejktarbetet\\projekt\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sebas\\OneDrive\\Skrivbord\\proejktarbetet\\projekt\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JonathanKareemIssela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
