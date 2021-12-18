@@ -18,7 +18,9 @@ namespace API.Services.IServices
 
         Task<List<Tenant>> ListTenantsAt(string name);
 
-        Task<Output> CreateData(string dörrBenämning, string code, string tag, string person, string codeExplanation);
+        Task<Output> CreateData(string dörrBenämning, string code, string tag, string person);
+
+        Task<List<Output>> ListTwentyOutputTables();
 
     }
 }

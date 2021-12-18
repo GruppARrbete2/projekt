@@ -1,4 +1,5 @@
-﻿using API.Models;
+﻿using API.Data;
+using API.Models;
 using API.Services.IServices;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -55,9 +56,16 @@ namespace API.Controllers
         }
 
         [HttpPost("CreateData")]
-        public async Task<Output> CreateData(string dörrBenämning, string code, string tag, string person, string codeExplanation)
+        public async Task<Output> CreateData(string dörrBenämning, string code, string tag, string person)
         {
-            return await _doorService.CreateData(dörrBenämning, code, tag, person, codeExplanation);
+            return await _doorService.CreateData(dörrBenämning, code, tag, person);
+        }
+
+        [HttpPost("List20Ouputs")]
+        public async Task<List<Output>> ListTwentyOutputTables()
+{
+            var list = await _doorService.ListTwentyOutputTables();
+            return list;
         }
     }
  }

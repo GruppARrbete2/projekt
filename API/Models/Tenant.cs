@@ -7,7 +7,7 @@ namespace API.Models
         [Key]
         public int TenantID {get; set;}
         public string? Namne {get; set;}
-        public int  Apartment {get; set;}     
+        public string?  Apartment {get; set;}     
         public string? Tag {get; set;}
     }
 }
