@@ -34,7 +34,7 @@ namespace API.Data
         );
             builder.Entity<Output>()
                   .HasData(
-                  new Output { Time = DateTime.Now., DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                  new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
                   new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖUT", Tag = "0301A", Person = "Ella Ahlström" },
                    new Output { Time = DateTime.Now.Ticks, DörrBenämning = "Lägenhet", Code = "DÖIN", Tag = "0302A", Person = "Göran Ahlström" },
                    new Output { Time = DateTime.Now.Ticks, DörrBenämning = "Lägenhet", Code = "DÖIN", Tag = "0302A", Person = "Göran Ahlström" },
