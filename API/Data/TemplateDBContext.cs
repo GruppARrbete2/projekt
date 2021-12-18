@@ -22,7 +22,9 @@ namespace API.Data
             builder.Entity<Tenant>()
                 .HasData(
                 new Tenant { TenantID = 1, Namne = "Göran Svensson", Apartment = 1001, Tag = "1001A" },
-                new Tenant { TenantID = 2, Namne = "Göran Andersson", Apartment = 1002, Tag = "1002A" }
+                new Tenant { TenantID = 2, Namne = "Göran Andersson", Apartment = 1002, Tag = "1002A" },
+                     new Tenant { TenantID = 2, Namne = "Jonas Andersson", Apartment = 1002, Tag = "1002B" },
+                          new Tenant { TenantID = 2, Namne = "Stefan Andersson", Apartment = 1001, Tag = "1002B" }
         );
             builder.Entity<Door>()
                   .HasData(
@@ -32,9 +34,28 @@ namespace API.Data
         );
             builder.Entity<Output>()
                   .HasData(
-                  new Output { ID = 1, Time = DateTime.Now.,DörrBenämning = "TVÄTT", Code = "DÖIN" , Tag = "0301A" , Person = "Ella Ahlström" },
-                  new Output { ID = 2, Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖUT", Tag = "0301A", Person = "Ella Ahlström"},
-                   new Output { ID = 3, Time = DateTime.Now.Ticks, DörrBenämning = "Lägenhet", Code = "DÖIN", Tag = "0302A", Person = "Göran Ahlström" }
+                  new Output { Time = DateTime.Now., DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                  new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖUT", Tag = "0301A", Person = "Ella Ahlström" },
+                   new Output { Time = DateTime.Now.Ticks, DörrBenämning = "Lägenhet", Code = "DÖIN", Tag = "0302A", Person = "Göran Ahlström" },
+                   new Output { Time = DateTime.Now.Ticks, DörrBenämning = "Lägenhet", Code = "DÖIN", Tag = "0302A", Person = "Göran Ahlström" },
+                    new Output { Time = DateTime.Now.Ticks, DörrBenämning = "Lägenhet", Code = "DÖIN", Tag = "0302A", Person = "Göran Ahlström" },
+                     new Output { Time = DateTime.Now.Ticks, DörrBenämning = "Lägenhet", Code = "DÖIN", Tag = "0302A", Person = "Göran Ahlström" },
+                      new Output { Time = DateTime.Now.Ticks, DörrBenämning = "Lägenhet", Code = "DÖIN", Tag = "0302A", Person = "Göran Ahlström" },
+                       new Output { Time = DateTime.Now.Ticks, DörrBenämning = "Lägenhet", Code = "DÖIN", Tag = "0302A", Person = "Göran Ahlström" },
+                        new Output { Time = DateTime.Now.Ticks, DörrBenämning = "Lägenhet", Code = "DÖIN", Tag = "0302A", Person = "Göran Ahlström" },
+                         new Output { Time = DateTime.Now.Ticks, DörrBenämning = "Lägenhet", Code = "DÖIN", Tag = "0302A", Person = "Göran Ahlström" },
+                          new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                           new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                            new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                             new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                              new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                               new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                                new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                                 new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                                  new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                                  new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                                  new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" },
+                                  new Output { Time = DateTime.Now.Ticks, DörrBenämning = "TVÄTT", Code = "DÖIN", Tag = "0301A", Person = "Ella Ahlström" }
         );
         }
     }
