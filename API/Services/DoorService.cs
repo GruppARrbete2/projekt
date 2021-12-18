@@ -47,10 +47,10 @@ namespace API.Services
 
         }
 
-        public Task<Output> CreateData(string dörrBenämning, string code, string tag, string person, string codeExplanation)
+        public Task<Output> CreateData(string dörrBenämning, string code, string tag, string person)
 {
 
-            return _doorRepository.CreateData(dörrBenämning, code, tag, person, codeExplanation);
+            return _doorRepository.CreateData(dörrBenämning, code, tag, person);
         }
     }
 }

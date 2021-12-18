@@ -55,9 +55,9 @@ namespace API.Controllers
         }
 
         [HttpPost("CreateData")]
-        public async Task<Output> CreateData(string dörrBenämning, string code, string tag, string person, string codeExplanation)
+        public async Task<Output> CreateData(string dörrBenämning, string code, string tag, string person)
         {
-            return await _doorService.CreateData(dörrBenämning, code, tag, person, codeExplanation);
+            return await _doorService.CreateData(dörrBenämning, code, tag, person);
         }
     }
  }

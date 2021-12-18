@@ -63,17 +63,17 @@ namespace API.Repositories
         }
 
 
-        public async Task<Output> CreateData(string dörrBenämning, string code, string tag, string person, string codeExplanation)
+        public async Task<Output> CreateData(string dörrBenämning, string code, string tag, string person)
         {
             var createData = new Output
             {
 
-                Time = DateTime.Now.TimeOfDay,
+                Time = DateTime.Now.Ticks,
                 DörrBenämning = dörrBenämning,
                 Code = code,
                 Tag = tag,
-                Person = person,
-                CodeExplation = codeExplanation
+                Person = person
+             
 
             };
 
