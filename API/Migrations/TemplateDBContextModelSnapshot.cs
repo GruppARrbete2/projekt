@@ -61,7 +61,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794554L
+                            Time = 637754366628079589L
                         },
                         new
                         {
@@ -70,7 +70,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794588L
+                            Time = 637754366628079623L
                         },
                         new
                         {
@@ -79,7 +79,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794591L
+                            Time = 637754366628079629L
                         },
                         new
                         {
@@ -88,7 +88,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794593L
+                            Time = 637754366628079631L
                         },
                         new
                         {
@@ -97,7 +97,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794595L
+                            Time = 637754366628079632L
                         },
                         new
                         {
@@ -106,7 +106,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794598L
+                            Time = 637754366628079634L
                         },
                         new
                         {
@@ -115,7 +115,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794599L
+                            Time = 637754366628079637L
                         },
                         new
                         {
@@ -124,7 +124,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794601L
+                            Time = 637754366628079639L
                         },
                         new
                         {
@@ -133,7 +133,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794603L
+                            Time = 637754366628079642L
                         },
                         new
                         {
@@ -142,7 +142,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794605L
+                            Time = 637754366628079643L
                         },
                         new
                         {
@@ -151,7 +151,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794607L
+                            Time = 637754366628079645L
                         },
                         new
                         {
@@ -160,7 +160,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794609L
+                            Time = 637754366628079647L
                         },
                         new
                         {
@@ -169,7 +169,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794611L
+                            Time = 637754366628079649L
                         },
                         new
                         {
@@ -178,7 +178,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794613L
+                            Time = 637754366628079650L
                         },
                         new
                         {
@@ -187,7 +187,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794615L
+                            Time = 637754366628079652L
                         },
                         new
                         {
@@ -196,7 +196,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794618L
+                            Time = 637754366628079654L
                         },
                         new
                         {
@@ -205,7 +205,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794620L
+                            Time = 637754366628079656L
                         },
                         new
                         {
@@ -214,7 +214,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794622L
+                            Time = 637754366628079658L
                         },
                         new
                         {
@@ -223,7 +223,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794624L
+                            Time = 637754366628079659L
                         },
                         new
                         {
@@ -232,7 +232,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794626L
+                            Time = 637754366628079661L
                         },
                         new
                         {
@@ -241,7 +241,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794628L
+                            Time = 637754366628079663L
                         },
                         new
                         {
@@ -250,7 +250,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794631L
+                            Time = 637754366628079665L
                         });
                 });
 
@@ -262,8 +262,8 @@ namespace API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TenantID"), 1L, 1);
 
-                    b.Property<int>("Apartment")
-                        .HasColumnType("int");
+                    b.Property<string>("Apartment")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Namne")
                         .HasColumnType("nvarchar(max)");
@@ -279,28 +279,28 @@ namespace API.Migrations
                         new
                         {
                             TenantID = 1,
-                            Apartment = 1001,
+                            Apartment = "1001",
                             Namne = "Göran Svensson",
                             Tag = "1001A"
                         },
                         new
                         {
                             TenantID = 2,
-                            Apartment = 1002,
+                            Apartment = "1002",
                             Namne = "Göran Andersson",
                             Tag = "1002A"
                         },
                         new
                         {
                             TenantID = 3,
-                            Apartment = 1002,
+                            Apartment = "1002",
                             Namne = "Jonas Andersson",
                             Tag = "1002B"
                         },
                         new
                         {
                             TenantID = 4,
-                            Apartment = 1001,
+                            Apartment = "1001",
                             Namne = "Stefan Andersson",
                             Tag = "1002B"
                         });

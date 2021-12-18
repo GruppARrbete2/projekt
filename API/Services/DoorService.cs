@@ -52,5 +52,13 @@ namespace API.Services
 
             return _doorRepository.CreateData(dörrBenämning, code, tag, person);
         }
+
+       public Task<List<Output>> ListTwentyOutputTables()
+        {
+            return _doorRepository.ListTwentyOutputTables();
+        }
+
+
+      
     }
 }

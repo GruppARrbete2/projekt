@@ -20,5 +20,7 @@ namespace API.Services.IServices
 
         Task<Output> CreateData(string dörrBenämning, string code, string tag, string person);
 
+        Task<List<Output>> ListTwentyOutputTables();
+
     }
 }

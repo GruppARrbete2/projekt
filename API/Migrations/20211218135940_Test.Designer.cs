@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(TemplateDBContext))]
-    [Migration("20211218135527_Test5435")]
-    partial class Test5435
+    [Migration("20211218135940_Test")]
+    partial class Test
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -63,7 +63,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794554L
+                            Time = 637754363807826772L
                         },
                         new
                         {
@@ -72,7 +72,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794588L
+                            Time = 637754363807826939L
                         },
                         new
                         {
@@ -81,7 +81,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794591L
+                            Time = 637754363807826942L
                         },
                         new
                         {
@@ -90,7 +90,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794593L
+                            Time = 637754363807826944L
                         },
                         new
                         {
@@ -99,7 +99,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794595L
+                            Time = 637754363807826947L
                         },
                         new
                         {
@@ -108,7 +108,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794598L
+                            Time = 637754363807826949L
                         },
                         new
                         {
@@ -117,7 +117,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794599L
+                            Time = 637754363807826951L
                         },
                         new
                         {
@@ -126,7 +126,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794601L
+                            Time = 637754363807826953L
                         },
                         new
                         {
@@ -135,7 +135,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794603L
+                            Time = 637754363807826955L
                         },
                         new
                         {
@@ -144,7 +144,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794605L
+                            Time = 637754363807826957L
                         },
                         new
                         {
@@ -153,7 +153,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794607L
+                            Time = 637754363807826958L
                         },
                         new
                         {
@@ -162,7 +162,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794609L
+                            Time = 637754363807826960L
                         },
                         new
                         {
@@ -171,7 +171,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794611L
+                            Time = 637754363807826962L
                         },
                         new
                         {
@@ -180,7 +180,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794613L
+                            Time = 637754363807826963L
                         },
                         new
                         {
@@ -189,7 +189,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794615L
+                            Time = 637754363807826965L
                         },
                         new
                         {
@@ -198,7 +198,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794618L
+                            Time = 637754363807826969L
                         },
                         new
                         {
@@ -207,7 +207,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794620L
+                            Time = 637754363807826971L
                         },
                         new
                         {
@@ -216,7 +216,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794622L
+                            Time = 637754363807826973L
                         },
                         new
                         {
@@ -225,7 +225,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794624L
+                            Time = 637754363807826974L
                         },
                         new
                         {
@@ -234,7 +234,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794626L
+                            Time = 637754363807826976L
                         },
                         new
                         {
@@ -243,7 +243,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794628L
+                            Time = 637754363807826978L
                         },
                         new
                         {
@@ -252,7 +252,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794631L
+                            Time = 637754363807826979L
                         });
                 });
 

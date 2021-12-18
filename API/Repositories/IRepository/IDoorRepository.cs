@@ -20,6 +20,8 @@ namespace API.Repositories.IRepository
 
         Task<Output> CreateData(string dörrBenämning, string code, string tag, string person);
 
+        Task<List<Output>> ListTwentyOutputTables();
+
 
     }
 }

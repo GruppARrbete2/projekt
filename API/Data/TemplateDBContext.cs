@@ -20,10 +20,10 @@ namespace API.Data
         {
             builder.Entity<Tenant>()
                 .HasData(
-                new Tenant { TenantID = 1, Namne = "Göran Svensson", Apartment = 1001, Tag = "1001A" },
-                new Tenant { TenantID = 2, Namne = "Göran Andersson", Apartment = 1002, Tag = "1002A" },
-                     new Tenant { TenantID = 3, Namne = "Jonas Andersson", Apartment = 1002, Tag = "1002B" },
-                          new Tenant { TenantID = 4, Namne = "Stefan Andersson", Apartment = 1001, Tag = "1002B" }
+                new Tenant { TenantID = 1, Namne = "Göran Svensson", Apartment = "1001", Tag = "1001A" },
+                new Tenant { TenantID = 2, Namne = "Göran Andersson", Apartment = "1002", Tag = "1002A" },
+                     new Tenant { TenantID = 3, Namne = "Jonas Andersson", Apartment = "1002", Tag = "1002B" },
+                          new Tenant { TenantID = 4, Namne = "Stefan Andersson", Apartment = "1001", Tag = "1002B" }
     );
             builder.Entity<Output>()
                   .HasData(

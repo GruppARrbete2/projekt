@@ -1,423 +1,397 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace API.Migrations
 {
-    public partial class Test5435 : Migration
+    public partial class test5 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_Tenants_Locations_LocationID",
-                table: "Tenants");
-
-            migrationBuilder.DropTable(
-                name: "Doors");
-
-            migrationBuilder.DropTable(
-                name: "DoorsOpened");
-
-            migrationBuilder.DropTable(
-                name: "Locations");
-
-            migrationBuilder.DropIndex(
-                name: "IX_Tenants_LocationID",
-                table: "Tenants");
-
-            migrationBuilder.DropColumn(
-                name: "LocationID",
-                table: "Tenants");
+            migrationBuilder.AlterColumn<string>(
+                name: "Apartment",
+                table: "Tenants",
+                type: "nvarchar(max)",
+                nullable: true,
+                oldClrType: typeof(int),
+                oldType: "int");
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 1,
                 column: "Time",
-                value: 637754361274794554L);
+                value: 637754366628079589L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 2,
                 column: "Time",
-                value: 637754361274794588L);
+                value: 637754366628079623L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 3,
                 column: "Time",
-                value: 637754361274794591L);
+                value: 637754366628079629L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 4,
                 column: "Time",
-                value: 637754361274794593L);
+                value: 637754366628079631L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 5,
                 column: "Time",
-                value: 637754361274794595L);
+                value: 637754366628079632L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 6,
                 column: "Time",
-                value: 637754361274794598L);
+                value: 637754366628079634L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 7,
                 column: "Time",
-                value: 637754361274794599L);
+                value: 637754366628079637L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 8,
                 column: "Time",
-                value: 637754361274794601L);
+                value: 637754366628079639L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 9,
                 column: "Time",
-                value: 637754361274794603L);
+                value: 637754366628079642L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 10,
                 column: "Time",
-                value: 637754361274794605L);
+                value: 637754366628079643L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 11,
                 column: "Time",
-                value: 637754361274794607L);
+                value: 637754366628079645L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 12,
                 column: "Time",
-                value: 637754361274794609L);
+                value: 637754366628079647L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 13,
                 column: "Time",
-                value: 637754361274794611L);
+                value: 637754366628079649L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 14,
                 column: "Time",
-                value: 637754361274794613L);
+                value: 637754366628079650L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 15,
                 column: "Time",
-                value: 637754361274794615L);
+                value: 637754366628079652L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 16,
                 column: "Time",
-                value: 637754361274794618L);
+                value: 637754366628079654L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 17,
                 column: "Time",
-                value: 637754361274794620L);
+                value: 637754366628079656L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 18,
                 column: "Time",
-                value: 637754361274794622L);
+                value: 637754366628079658L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 19,
                 column: "Time",
-                value: 637754361274794624L);
+                value: 637754366628079659L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 20,
                 column: "Time",
-                value: 637754361274794626L);
+                value: 637754366628079661L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 21,
                 column: "Time",
-                value: 637754361274794628L);
+                value: 637754366628079663L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 22,
                 column: "Time",
-                value: 637754361274794631L);
+                value: 637754366628079665L);
+
+            migrationBuilder.UpdateData(
+                table: "Tenants",
+                keyColumn: "TenantID",
+                keyValue: 1,
+                column: "Apartment",
+                value: "1001");
+
+            migrationBuilder.UpdateData(
+                table: "Tenants",
+                keyColumn: "TenantID",
+                keyValue: 2,
+                column: "Apartment",
+                value: "1002");
+
+            migrationBuilder.UpdateData(
+                table: "Tenants",
+                keyColumn: "TenantID",
+                keyValue: 3,
+                column: "Apartment",
+                value: "1002");
+
+            migrationBuilder.UpdateData(
+                table: "Tenants",
+                keyColumn: "TenantID",
+                keyValue: 4,
+                column: "Apartment",
+                value: "1001");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<int>(
-                name: "LocationID",
+            migrationBuilder.AlterColumn<int>(
+                name: "Apartment",
                 table: "Tenants",
                 type: "int",
-                nullable: true);
-
-            migrationBuilder.CreateTable(
-                name: "DoorsOpened",
-                columns: table => new
-                {
-                    DoorOpenedId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    DoorID = table.Column<int>(type: "int", nullable: true),
-                    TenantID = table.Column<int>(type: "int", nullable: true),
-                    Time = table.Column<TimeSpan>(type: "time", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_DoorsOpened", x => x.DoorOpenedId);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Locations",
-                columns: table => new
-                {
-                    LocationID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1")
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Locations", x => x.LocationID);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Doors",
-                columns: table => new
-                {
-                    DoorID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    DörrBenämning = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Explanation = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    LocationID = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Doors", x => x.DoorID);
-                    table.ForeignKey(
-                        name: "FK_Doors_Locations_LocationID",
-                        column: x => x.LocationID,
-                        principalTable: "Locations",
-                        principalColumn: "LocationID");
-                });
-
-            migrationBuilder.InsertData(
-                table: "Doors",
-                columns: new[] { "DoorID", "DörrBenämning", "Explanation", "LocationID" },
-                values: new object[,]
-                {
-                    { 1, "Tvätt", "Dörr mot tvättstuga", null },
-                    { 2, "LGH", "Dörr till lägenhet", null }
-                });
+                nullable: false,
+                defaultValue: 0,
+                oldClrType: typeof(string),
+                oldType: "nvarchar(max)",
+                oldNullable: true);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 1,
                 column: "Time",
-                value: 637754358879726706L);
+                value: 637754363807826772L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 2,
                 column: "Time",
-                value: 637754358879726742L);
+                value: 637754363807826939L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 3,
                 column: "Time",
-                value: 637754358879726745L);
+                value: 637754363807826942L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 4,
                 column: "Time",
-                value: 637754358879726747L);
+                value: 637754363807826944L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 5,
                 column: "Time",
-                value: 637754358879726749L);
+                value: 637754363807826947L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 6,
                 column: "Time",
-                value: 637754358879726752L);
+                value: 637754363807826949L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 7,
                 column: "Time",
-                value: 637754358879726754L);
+                value: 637754363807826951L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 8,
                 column: "Time",
-                value: 637754358879726756L);
+                value: 637754363807826953L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 9,
                 column: "Time",
-                value: 637754358879726758L);
+                value: 637754363807826955L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 10,
                 column: "Time",
-                value: 637754358879726760L);
+                value: 637754363807826957L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 11,
                 column: "Time",
-                value: 637754358879726762L);
+                value: 637754363807826958L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 12,
                 column: "Time",
-                value: 637754358879726764L);
+                value: 637754363807826960L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 13,
                 column: "Time",
-                value: 637754358879726766L);
+                value: 637754363807826962L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 14,
                 column: "Time",
-                value: 637754358879726769L);
+                value: 637754363807826963L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 15,
                 column: "Time",
-                value: 637754358879726771L);
+                value: 637754363807826965L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 16,
                 column: "Time",
-                value: 637754358879726773L);
+                value: 637754363807826969L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 17,
                 column: "Time",
-                value: 637754358879726775L);
+                value: 637754363807826971L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 18,
                 column: "Time",
-                value: 637754358879726777L);
+                value: 637754363807826973L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 19,
                 column: "Time",
-                value: 637754358879726779L);
+                value: 637754363807826974L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 20,
                 column: "Time",
-                value: 637754358879726780L);
+                value: 637754363807826976L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 21,
                 column: "Time",
-                value: 637754358879726783L);
+                value: 637754363807826978L);
 
             migrationBuilder.UpdateData(
                 table: "Outputs",
                 keyColumn: "ID",
                 keyValue: 22,
                 column: "Time",
-                value: 637754358879726785L);
+                value: 637754363807826979L);
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Tenants_LocationID",
+            migrationBuilder.UpdateData(
                 table: "Tenants",
-                column: "LocationID");
+                keyColumn: "TenantID",
+                keyValue: 1,
+                column: "Apartment",
+                value: 1001);
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Doors_LocationID",
-                table: "Doors",
-                column: "LocationID");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_Tenants_Locations_LocationID",
+            migrationBuilder.UpdateData(
                 table: "Tenants",
-                column: "LocationID",
-                principalTable: "Locations",
-                principalColumn: "LocationID");
+                keyColumn: "TenantID",
+                keyValue: 2,
+                column: "Apartment",
+                value: 1002);
+
+            migrationBuilder.UpdateData(
+                table: "Tenants",
+                keyColumn: "TenantID",
+                keyValue: 3,
+                column: "Apartment",
+                value: 1002);
+
+            migrationBuilder.UpdateData(
+                table: "Tenants",
+                keyColumn: "TenantID",
+                keyValue: 4,
+                column: "Apartment",
+                value: 1001);
         }
     }
 }
