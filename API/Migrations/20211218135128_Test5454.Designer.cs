@@ -4,6 +4,7 @@ using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(TemplateDBContext))]
-    partial class TemplateDBContextModelSnapshot : ModelSnapshot
+    [Migration("20211218135128_Test5454")]
+    partial class Test5454
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,6 +23,77 @@ namespace API.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("API.Models.Door", b =>
+                {
+                    b.Property<int>("DoorID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DoorID"), 1L, 1);
+
+                    b.Property<string>("DörrBenämning")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Explanation")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("LocationID")
+                        .HasColumnType("int");
+
+                    b.HasKey("DoorID");
+
+                    b.HasIndex("LocationID");
+
+                    b.ToTable("Doors");
+
+                    b.HasData(
+                        new
+                        {
+                            DoorID = 1,
+                            DörrBenämning = "Tvätt",
+                            Explanation = "Dörr mot tvättstuga"
+                        },
+                        new
+                        {
+                            DoorID = 2,
+                            DörrBenämning = "LGH",
+                            Explanation = "Dörr till lägenhet"
+                        });
+                });
+
+            modelBuilder.Entity("API.Models.DoorOpened", b =>
+                {
+                    b.Property<Guid?>("DoorOpenedId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int?>("DoorID")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TenantID")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan?>("Time")
+                        .HasColumnType("time");
+
+                    b.HasKey("DoorOpenedId");
+
+                    b.ToTable("DoorsOpened");
+                });
+
+            modelBuilder.Entity("API.Models.Location", b =>
+                {
+                    b.Property<int>("LocationID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LocationID"), 1L, 1);
+
+                    b.HasKey("LocationID");
+
+                    b.ToTable("Locations");
+                });
 
             modelBuilder.Entity("API.Models.Output", b =>
                 {
@@ -61,7 +134,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794554L
+                            Time = 637754358879726706L
                         },
                         new
                         {
@@ -70,7 +143,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794588L
+                            Time = 637754358879726742L
                         },
                         new
                         {
@@ -79,7 +152,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794591L
+                            Time = 637754358879726745L
                         },
                         new
                         {
@@ -88,7 +161,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794593L
+                            Time = 637754358879726747L
                         },
                         new
                         {
@@ -97,7 +170,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794595L
+                            Time = 637754358879726749L
                         },
                         new
                         {
@@ -106,7 +179,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794598L
+                            Time = 637754358879726752L
                         },
                         new
                         {
@@ -115,7 +188,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794599L
+                            Time = 637754358879726754L
                         },
                         new
                         {
@@ -124,7 +197,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794601L
+                            Time = 637754358879726756L
                         },
                         new
                         {
@@ -133,7 +206,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794603L
+                            Time = 637754358879726758L
                         },
                         new
                         {
@@ -142,7 +215,7 @@ namespace API.Migrations
                             DörrBenämning = "Lägenhet",
                             Person = "Göran Ahlström",
                             Tag = "0302A",
-                            Time = 637754361274794605L
+                            Time = 637754358879726760L
                         },
                         new
                         {
@@ -151,7 +224,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794607L
+                            Time = 637754358879726762L
                         },
                         new
                         {
@@ -160,7 +233,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794609L
+                            Time = 637754358879726764L
                         },
                         new
                         {
@@ -169,7 +242,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794611L
+                            Time = 637754358879726766L
                         },
                         new
                         {
@@ -178,7 +251,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794613L
+                            Time = 637754358879726769L
                         },
                         new
                         {
@@ -187,7 +260,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794615L
+                            Time = 637754358879726771L
                         },
                         new
                         {
@@ -196,7 +269,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794618L
+                            Time = 637754358879726773L
                         },
                         new
                         {
@@ -205,7 +278,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794620L
+                            Time = 637754358879726775L
                         },
                         new
                         {
@@ -214,7 +287,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794622L
+                            Time = 637754358879726777L
                         },
                         new
                         {
@@ -223,7 +296,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794624L
+                            Time = 637754358879726779L
                         },
                         new
                         {
@@ -232,7 +305,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794626L
+                            Time = 637754358879726780L
                         },
                         new
                         {
@@ -241,7 +314,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794628L
+                            Time = 637754358879726783L
                         },
                         new
                         {
@@ -250,7 +323,7 @@ namespace API.Migrations
                             DörrBenämning = "TVÄTT",
                             Person = "Ella Ahlström",
                             Tag = "0301A",
-                            Time = 637754361274794631L
+                            Time = 637754358879726785L
                         });
                 });
 
@@ -265,6 +338,9 @@ namespace API.Migrations
                     b.Property<int>("Apartment")
                         .HasColumnType("int");
 
+                    b.Property<int?>("LocationID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Namne")
                         .HasColumnType("nvarchar(max)");
 
@@ -272,6 +348,8 @@ namespace API.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("TenantID");
+
+                    b.HasIndex("LocationID");
 
                     b.ToTable("Tenants");
 
@@ -304,6 +382,27 @@ namespace API.Migrations
                             Namne = "Stefan Andersson",
                             Tag = "1002B"
                         });
+                });
+
+            modelBuilder.Entity("API.Models.Door", b =>
+                {
+                    b.HasOne("API.Models.Location", null)
+                        .WithMany("Doors")
+                        .HasForeignKey("LocationID");
+                });
+
+            modelBuilder.Entity("API.Models.Tenant", b =>
+                {
+                    b.HasOne("API.Models.Location", null)
+                        .WithMany("Tenants")
+                        .HasForeignKey("LocationID");
+                });
+
+            modelBuilder.Entity("API.Models.Location", b =>
+                {
+                    b.Navigation("Doors");
+
+                    b.Navigation("Tenants");
                 });
 #pragma warning restore 612, 618
         }

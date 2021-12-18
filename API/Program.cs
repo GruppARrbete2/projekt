@@ -21,8 +21,6 @@ builder.Services.AddDbContext<TemplateDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-builder.Services.AddScoped<ITRepository, TRepository>();
-builder.Services.AddScoped<ITService, TService>();
 builder.Services.AddScoped<IDoorService, DoorService>();
 builder.Services.AddScoped<IDoorRepository, DoorRepository>();
 
